@@ -1,1 +1,1 @@
-# goit-markup-hw-01
+# goit-choco-hw-01
