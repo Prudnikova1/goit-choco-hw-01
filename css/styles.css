@@ -8,46 +8,52 @@ ul{
     list-style: none;
 }
 
+.section-title span {
+    color: #FD9222;
+}
+.section-title {
+    color: #111;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.17;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+}
 
+ /* -----header--------- */
 
 .header-logo{
         color: #111;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.11;
-        letter-spacing: -3%; /* -0.54px/18 */
+        letter-spacing: -0.03em;
 }
 
 .header-logo-italic{
     font-style: italic;
 }
 
-.header-menu-link{
+.header-menu-link {
     color: #111;
         font-size: 14px;
         font-weight: 500;
-        line-height: 1.14; /* 16px/14 */
-        /* 114.286% */
-        letter-spacing: -2%; /* -0.28px/14 */
+        line-height:1.14
+        letter-spacing:-0.02em;
 }
 
-.header-menu-link:focus, 
 .header-menu-link:hover, 
-.header-menu-link:active{
-    #FD9222;
+.header-menu-link:active,
+.header-menu-link:focus {
+color:#fd9222;
 }
-
+/* -----hero-------- */
 .hero {
     background: rgba(17, 17, 17, 0.60);
 }
 
-.hero-title {
-    color: #FFF;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 1.21;
-        letter-spacing: -0.03em;
-}
 
 .hero-buy-btn {
     color: #FFF;
@@ -55,6 +61,7 @@ ul{
         font-size: 14px;
         font-weight: 600;
         line-height: normal;
+        cursor: pointer;
 }
 
 .hero-made-btn {
@@ -66,4 +73,278 @@ ul{
         letter-spacing: -0.03em;
 }
 
-.hero-down-btn {}
+.hero-down-btn {
+    color: #FFF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        letter-spacing: -0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
+}
+/* -----------features---------- */
+
+.features {
+    background: #1E1823;
+}
+
+.features-list {
+}
+
+.feature-item {}
+
+.features-subtitle {
+    color: #FFF;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: normal;
+}
+
+.feature-item-text {
+    color: rgba(255, 255, 255, 0.70);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+}
+/* ------taste--------- */
+
+.taste {}
+
+
+.taste-text {
+    color: #111;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+}
+
+.tast-list {}
+
+.tast-item {}
+
+.taste-img {}
+
+.taste-subtitle {
+    color: #111;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+}
+
+/* ----made-------- */
+
+.made {}
+
+.made-img {}
+
+.made-subtitle {
+    color: #111;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+}
+
+.made-list {}
+
+.made-item {}
+
+.made-item-text {
+color: #111;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02;
+}
+/* -------products-------- */
+
+.products {}
+
+.products-list {}
+
+.producys-item {}
+
+.products-img {}
+
+.product-subtitle {
+color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.products-item-text {
+    color: rgba(17, 17, 17, 0.70);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+}
+
+.products-item {}
+
+.products-item-btm{
+    color: #111;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+}
+
+/* ------sellers------- */
+
+.sellers {}
+
+.sellers-title {}
+
+.section-title {}
+
+.sellers-list {}
+
+.sellers-item {}
+
+.sellers-img {}
+
+.sellers-subtitle {
+    color: #111;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+}
+
+/* ------loved------ */
+
+.loved {}
+
+.loved-title {}
+
+.section-title {}
+
+.loved-list {}
+
+.loved-item {}
+
+.loved-img {}
+
+.loved-subtitle {
+    color: #111;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+}
+
+.loved-item-text {
+    color: rgba(17, 17, 17, 0.70);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+}
+
+.loved-btn {
+    color: #111;
+    font-family: inherit;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+}
+
+/* ---------footer------ */
+.footer {
+    background: #1E1823;
+}
+
+.footer-heading {
+color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: calc(34 / 28);
+    letter-spacing: -0.02em;
+}
+
+.footer-heading span{
+color: #FD9222;
+}
+
+.footer-subtitle {
+    color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.29em;
+}
+
+.footer-soc-list {}
+
+.footer-soc-item {}
+
+.footer-soc-link {
+
+}
+
+.footer-addres {
+    font-style: normal;
+}
+
+.footer-addres-list {}
+
+.footer-addres-item {}
+
+.footer-addres-link {
+        color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.29;
+            letter-spacing: -0.02em;
+}
+
+.footer-navigation {}
+
+.footer-menu-list {}
+
+.footer-menu-item {}
+
+.footer-menu-link {
+    color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.14;
+    
+        letter-spacing: -0.02em;
+}
+.footer-menu-link:hover,
+.footer-menu-link:active,
+.footer-menu-link:focus {
+    color: #fd9222;
+}
