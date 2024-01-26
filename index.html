@@ -10,11 +10,13 @@
       rel="stylesheet"
     />
     <title>Chocolate store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" >
 
   </head>
   <body>
     <header class="header">
+      <div class="container header-cotainer">
       <nav class="header-nav">
         <a class="header-logo" href="./index.html"
           ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE
@@ -65,20 +67,25 @@
           >
         </li>
       </ul>
+      </div>
     </header>
     <main class="main">
       <section class="hero">
+        <div class="container hero-container">
         <h1 class="hero-title section-title">
-          Treat yourself or a loved one to our finest ingredients for a moment
+          Treat yourself or a loved one to<br> our finest ingredients for a moment
           of pure delight!
         </h1>
+        <div class="hero-buttons">
         <button type="button" class="hero-buy-btn">Buy now</button>
         <a href="#made" class="hero-made-btn">How it’s made</a>
         <a href="" class="hero-down-btn">scroll down</a>
+      </div>
+      </div>
       </section>
-      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</div>
       <section class="features">
-        <h2 class=".visually-hidden">features</h2>
+        <div class="container">
+        <h2 class="visually-hidden">features</h2>
         <ul class="features-list">
           <li class="feature-item">
             <h3 class="features-subtitle">Unsurpassed taste</h3>
@@ -109,8 +116,10 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="taste">
+        <div class="container">
       <h2 class="taste-title section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION</h2>
       <p class="taste-text">
         At Simply Chocolate, we believe that the secret to exceptional chocolate
@@ -182,16 +191,21 @@
           />
           <h3 class="taste-subtitle">COCONUT OIL</h3>
         </li>
-      </ul></section>
+      </ul>
+    </div>
+  </section>
       <section class="made">
-        <h2 class="made-title section-title">hOW IT’S <span> made?</span></h2>
-        <img
-          src="./img/image.jpg"
-          alt="liquide chocolate"
-          width="600"
-          height="400"
-          class="made-img"
-        />
+          <div class="container">
+          <h2 class="made-title section-title">hOW IT’S <span> made?</span></h2>
+          <div class="made-wrap">
+          <img
+            src="./img/image.jpg"
+            alt="liquide chocolate"
+            width="600"
+            height="400"
+            class="made-img"
+          />
+        <div class="made-content">
         <h3 class="made-subtitle">
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
@@ -224,8 +238,12 @@
             </p>
           </li>
         </ul>
+        </div>
+        </div>
+        </div>
       </section>
       <section class="products">
+        <div class="container">
         <h2 class="products-title section-title">Our <span>RODUCTS</span></h2>
         <ul class="products-list">
           <li class="producys-item">
@@ -317,8 +335,10 @@
             <button type="button" class="products-item-btm">54 UAH</button>
           </li>
         </ul>
+        </div>
       </section>
       <section class="sellers">
+        <div class="container">
         <h2 class="sellers-title section-title" > <span>tOp</span> Sellers</h2>
         <ul class="sellers-list">
           <li class="sellers-item">
@@ -349,8 +369,10 @@
             <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
           </li>
         </ul>
+        </div>
       </section>
       <section class="loved">
+        <div class="container">
         <h2 class="loved-title section-title"> <span>chocolate</span> is loved</h2>
         <ul class="loved-list">
           <li class="loved-item">
@@ -396,9 +418,11 @@
           </li>
         </ul>
         <button type="button" class="loved-btn">Leave a review</button>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
       <p class="footer-heading"><span>Chocolate</span> a delicious cure for a bad day</p>
       <p class="footer-subtitle">Social networks</p>
       <ul class="footer-soc-list">
@@ -428,6 +452,7 @@
           </li>
         </ul>
       </nav>
+      </div>
     </footer>
   </body>
 </html>

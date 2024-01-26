@@ -1,16 +1,65 @@
 body{
     font-family: 'montserrat', sans-serif;
+    background-color: #fafafa;
 }
+
+p, h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 a {
     text-decoration: none;
+    color: currentColor;
 }
+
 ul{
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+button{
+    cursor: pointer;
+}
+
+address{
+    font-style: normal;
+}
+
+.container{
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.link{
+    text-decoration: none;
 }
 
 .section-title span {
     color: #FD9222;
 }
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
+}
+
+
 .section-title {
     color: #111;
         text-align: center;
@@ -21,21 +70,41 @@ ul{
         letter-spacing: -0.03em;
         text-transform: uppercase;
 }
+/* ----------------------------- */
+/* ----------header------------ */
+.header-cotainer{
+    display: flex;
+    gap: 90px;
+    align-items: center;
+}
 
- /* -----header--------- */
+.header{
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
 
 .header-logo{
         color: #111;
         font-size: 18px;
         font-weight: 700;
-        line-height: 1.11;
+        line-height: calc(20 / 18);
         letter-spacing: -0.03em;
+        display: flex;
+        align-items: center;
+        gap: 4px;
 }
 
 .header-logo-italic{
     font-style: italic;
+    margin-right: 5px;
 }
 
+.header-nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
 .header-menu-link {
     color: #111;
         font-size: 14px;
@@ -49,28 +118,59 @@ ul{
 .header-menu-link:focus {
 color:#fd9222;
 }
-/* -----hero-------- */
-.hero {
-    background: rgba(17, 17, 17, 0.60);
+
+.header-menu-list{
+    display: flex;
+    gap: 24px;
+}
+
+.header-soc-list{
+    display: flex;
+    gap: 14px;
+}
+/* ------------------------------ */
+/* -------------hero------------- */
+.hero{
+    padding-bottom: 80px;
 }
 
 
+.hero-container{
+    background-color: rgba(17, 17, 17, 0.60);
+border-radius: 30px;
+padding: 380px 40px 40px 40px;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+}
+
 .hero-buy-btn {
+    padding: 14px 40px;
     color: #FFF;
     font-family: inherit;
         font-size: 14px;
         font-weight: 600;
         line-height: normal;
         cursor: pointer;
+        border-radius: 100px;
+            background: #FD9222;
+            border: none;
+            margin-right: 14px;
 }
 
 .hero-made-btn {
+    padding: 14px 40px;
     color: #FFF;
         font-family: inherit;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.29;
         letter-spacing: -0.03em;
+        border-radius: 100px;
+            border: 1px solid #FFF;
+            background: transparent;
 }
 
 .hero-down-btn {
@@ -79,36 +179,46 @@ color:#fd9222;
         font-weight: 500;
         line-height: 1.29;
         letter-spacing: -0.03em;
+        margin-left: auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    overflow: hidden;
+.hero-title {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+    max-width: 484px;
+    text-transform: none;
+    text-align: left;
 }
-/* -----------features---------- */
+/* --------------------------------- */
+/* -------------features------------ */
 
 .features {
     background: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .features-list {
+    display: flex;
+    gap: 88px;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
-.feature-item {}
+.feature-item {
+    width: calc((100% -88px*2) / 3);
+}
 
 .features-subtitle {
     color: #FFF;
         font-size: 18px;
         font-weight: 600;
         line-height: normal;
+        margin-bottom: 18px;
 }
 
 .feature-item-text {
@@ -118,9 +228,17 @@ color:#fd9222;
         line-height: 1.29;
         letter-spacing: -0.02em;
 }
-/* ------taste--------- */
+/* --------------------------- */
+/* ----------taste------------ */
 
-.taste {}
+.taste-title{
+    max-width: 412px;
+    margin: 0 auto 28px;
+}
+
+.taste {
+    padding-top: 120px;
+}
 
 
 .taste-text {
@@ -130,25 +248,70 @@ color:#fd9222;
         font-weight: 400;
         line-height: 1.29;
         letter-spacing: -0.02em;
+        margin-bottom: 50px;
+        margin: 0 auto 50px;
+        max-width: 486px;
 }
 
-.tast-list {}
+.tast-list {
+display: flex;
+flex-wrap: wrap;
+gap: 24px 32px;
+}
 
-.tast-item {}
+.tast-item {
+    border-radius: 15px;
+        width: calc((100% - 96px) / 4);
+        padding: 28px 23px;
+}
 
-.taste-img {}
+.tast-item:nth-child(4n+1){
+    background: #FD9222;
+    color: #FFF;
+}
+
+.tast-item:nth-child(even){
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+
+.tast-item:nth-child(4n+3){
+        background: #1E1823;
+        color: #FFF;
+}
+
+.taste-img {
+    margin-bottom: 36px;
+}
 
 .taste-subtitle {
-    color: #111;
         font-size: 14px;
         font-weight: 600;
         line-height: 1.29;
         letter-spacing: -0.02em;
+        padding-left: 5px;
+}
+/* -------------------------- */
+/* ----------made------------ */
+
+.made {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-/* ----made-------- */
+.made-title{
+    margin-bottom: 50px;
+}
 
-.made {}
+.made-content{
+    background-color: #fffffff;
+    padding: 32px;
+}
+
+.made-wrap{
+    display: flex;
+    gap: 20px;
+}
 
 .made-img {}
 
@@ -157,12 +320,19 @@ color:#fd9222;
         font-size: 18px;
         font-weight: 600;
         line-height: 1.33;
+        margin-bottom: 28px;
+        max-width: 350px;
 }
 
 .made-list {}
 
-.made-item {}
+.made-item {
+    margin-bottom: 24px;
+}
 
+.made-item:last-child{
+    margin-bottom: 0;
+}
 .made-item-text {
 color: #111;
     font-size: 14px;
@@ -170,11 +340,18 @@ color: #111;
     line-height: 1.28;
     letter-spacing: -0.02;
 }
-/* -------products-------- */
+/* ----------------------------- */
+/* ----------products----------- */
 
 .products {}
 
-.products-list {}
+.section-title{
+   
+}
+
+.products-list {
+  
+}
 
 .producys-item {}
 
@@ -208,8 +385,8 @@ color: #111;
         line-height: normal;
         cursor: pointer;
 }
-
-/* ------sellers------- */
+/* ---------------------------- */
+/* ----------sellers----------- */
 
 .sellers {}
 
@@ -231,8 +408,8 @@ color: #111;
         letter-spacing: -0.02em;
         text-transform: uppercase;
 }
-
-/* ------loved------ */
+/* -------------------------- */
+/* ----------loved----------- */
 
 .loved {}
 
@@ -274,8 +451,8 @@ color: #111;
         line-height: normal;
         cursor: pointer;
 }
-
-/* ---------footer------ */
+/* ----------------------------- */
+/* ------------footer----------- */
 .footer {
     background: #1E1823;
 }
